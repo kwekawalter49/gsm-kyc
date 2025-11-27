@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>KYC Form - GSM Group</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{font-family: system-ui, sans-serif; background:#f0f2f5; padding:20px; margin:0}
+    .card{background:white; max-width:500px; margin:0 auto; padding:20px; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.1)}
+    h1{font-size:20px; text-align:center; color:#0b79d0}
+    label{display:block; margin:15px 0 5px; font-weight:600}
+    input, select, textarea{width:100%; padding:12px; border:1px solid #ddd; border-radius:8px; box-sizing:border-box; font-size:16px}
+    .row{display:flex; gap:10px}
+    .row > div{flex:1}
+    button{background:#0b79d0; color:white; border:none; padding:14px; width:100%; border-radius:8px; font-size:16px; cursor:pointer; margin-top:20px}
+    button:hover{background:#0a63b0}
+    .footer{font-size:12px; color:#888; text-align:center; margin-top:20px}
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h1>KYC Form — GSM Group</h1>
+
+  <form action="https://formsubmit.co/w.kweka@gsmgroup.africa" method="POST" enctype="multipart/form-data">
+    
+    <label>Customer Name *</label>
+    <input type="text" name="Customer Name" required>
+
+    <label>TIN No *</label>
+    <input type="text" name="TIN No" required>
+
+    <label>VRN (optional)</label>
+    <input type="text" name="VRN">
+
+    <label>Contact Person *</label>
+    <input type="text" name="Contact Person" required>
+
+    <label>Phone Number *</label>
+    <input type="tel" name="Phone" placeholder="+255 7xx xxx xxx" required>
+
+    <div class="row">
+      <div><label>Region *</label><input type="text" name="Region" required></div>
+      <div><label>District *</label><input type="text" name="District" required></div>
+    </div>
+
+    <label>Ward *</label>
+    <input type="text" name="Ward" required>
+
+    <label>ASM Name (optional)</label>
+    <input type="text" name="ASM Name">
+
+    <label>Attachments (Photos, PDFs, etc.)</label>
+    <input type="file" name="attachment" multiple accept=".pdf,.jpg,.jpeg,.png,.docx,.doc">
+
+    <!-- Hidden fields -->
+    <input type="hidden" name="_cc" value="m.lashayo@gsmgroup.africa,v.ndyali@gsmgroup.africa">
+    <input type="hidden" name="_subject" value="New KYC Submission - GSM Group">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://yourcompany.com/thank-you.html"> <!-- Optional: change or remove -->
+
+    <button type="submit">Submit KYC Form</button>
+  </form>
+
+  <div class="footer">
+    Works offline • Share via WhatsApp • No login needed
+  </div>
+</div>
+
+</body>
+</html>
